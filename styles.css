@@ -1,0 +1,145 @@
+:root {
+  --about-color: rgb(0, 166, 221);
+  --skills-color: orange;
+  --projects-color: rgb(113, 189, 0);
+  --contact-color: rgb(151, 0, 151);
+}
+
+@keyframes tempHide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInAndBounce {
+  from {
+    opacity: 0;
+    top: 48px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: large;
+}
+
+a[href="#about"] {
+  background: var(--about-color);
+  animation-delay: 0.5s, 0s;
+  animation-duration: 1s, 0.5s;
+}
+
+a[href="#skills"] {
+  background: var(--skills-color);
+  animation-delay: 1s, 0s;
+  animation-duration: 1s, 1s;
+}
+
+a[href="#projects"] {
+  background: var(--projects-color);
+  animation-delay: 1.5s, 0s;
+  animation-duration: 1s, 1.5s;
+}
+
+a[href="#contact"] {
+  background: var(--contact-color);
+  animation-delay: 2s, 0s;
+  animation-duration: 1s, 2s;
+}
+
+#about {
+  background: var(--about-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  background: black;
+  font-family: sans-serif;
+}
+
+#contact {
+  background: var(--contact-color);
+}
+
+nav {
+  opacity: 0;
+  position: sticky;
+  top: -1px;
+  display: flex;
+  height: 10vh;
+  color: white;
+  padding-top: 1px;
+}
+
+.isStuck {
+  transition: 1s;
+  opacity: 1;
+}
+
+hr {
+  width: 80vw;
+}
+
+#projects {
+  background: var(--projects-color);
+}
+
+section {
+  height: 100vh;
+  color: white;
+}
+
+#skills {
+  background: var(--skills-color);
+}
+
+#splash {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  min-height: 80vh;
+  justify-content: space-between;
+}
+
+#splash a {
+  position: relative;
+  animation-name: fadeInAndBounce, tempHide;
+  width: 30vw;
+  height: 30vw;
+  transition-duration: 1s;
+  border-radius: 5%;
+}
+
+#splash a:hover {
+  transition-duration: 1s;
+  width: 35vw;
+  height: 35vw;
+}
+
+#splash div {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 35vw 35vw;
+  grid-template-rows: 35vw 35vw;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+}

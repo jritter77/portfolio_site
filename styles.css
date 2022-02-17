@@ -84,6 +84,7 @@ nav {
   height: 10vh;
   color: white;
   padding-top: 1px;
+  z-index: 1;
 }
 
 .isStuck {
@@ -95,11 +96,18 @@ hr {
   width: 80vw;
 }
 
+.onScreen {
+  left: 0px;
+  transition-duration: 2s;
+}
+
 #projects {
   background: var(--projects-color);
 }
 
 section {
+  position: relative;
+  left: 100vw;
   height: 100vh;
   color: white;
 }

@@ -1,0 +1,86 @@
+@keyframes tempHide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInAndBounce {
+  from {
+    opacity: 0;
+    top: 48px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+.active {
+  transition-duration: 1s;
+}
+
+#about.active {
+  left: 0;
+}
+
+#contact.active {
+  left: 0;
+}
+
+#projects.active {
+  top: 0vh;
+}
+
+#skills.active {
+  top: 0vh;
+}
+
+button[value="about"] {
+  animation-delay: 0.5s, 0s;
+  animation-duration: 1s, 0.5s;
+}
+
+button[value="skills"] {
+  animation-delay: 1s, 0s;
+  animation-duration: 1s, 1s;
+}
+
+button[value="projects"] {
+  animation-delay: 1.5s, 0s;
+  animation-duration: 1s, 1.5s;
+}
+
+button[value="contact"] {
+  animation-delay: 2s, 0s;
+  animation-duration: 1s, 2s;
+}
+
+.isStuck {
+  transition-delay: 1s;
+  transition-duration: 1s;
+  opacity: 1;
+}
+
+.onScreen {
+  left: 0px;
+  transition-duration: 2s;
+}
+
+#about.active {
+  left: 0;
+}
+
+#splash button {
+  animation-name: fadeInAndBounce, tempHide;
+  transition-duration: 1s;
+}
+
+#splash button:hover {
+  transition-duration: 1s;
+  width: 35vw;
+  height: 35vw;
+  cursor: pointer;
+}

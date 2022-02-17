@@ -13,7 +13,7 @@ a {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  font-size: large;
+  font-size: 3em;
   border: none;
 }
 
@@ -68,6 +68,10 @@ h1 {
   font-size: 5em;
 }
 
+h2 {
+  font-size: 3em;
+}
+
 hr {
   width: 80vw;
 }
@@ -100,7 +104,6 @@ section {
   width: 30vw;
   height: 30vw;
   border-radius: 5%;
-  font-size: 3em;
 }
 
 #header {

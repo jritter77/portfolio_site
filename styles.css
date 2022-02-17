@@ -100,6 +100,7 @@ section {
   width: 30vw;
   height: 30vw;
   border-radius: 5%;
+  font-size: 3em;
 }
 
 #header {
@@ -122,5 +123,5 @@ section {
 }
 
 #splash p {
-  font-size: large;
+  font-size: 2em;
 }

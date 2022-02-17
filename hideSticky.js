@@ -1,8 +1,12 @@
-const el = document.querySelector("nav");
+const about = document.getElementById("about");
+const nav = document.getElementById("navbar");
 
-const observer = new IntersectionObserver(
-  ([e]) => e.target.classList.toggle("isStuck", e.intersectionRatio < 1),
-  { threshold: [1] }
-);
+function checkTop() {
+  if (about.getBoundingClientRect().top <= 0) {
+    nav.classList.add("isStuck");
+  } else {
+    nav.classList.remove("isStuck");
+  }
+}
 
-observer.observe(el);
+document.addEventListener("scroll", checkTop);

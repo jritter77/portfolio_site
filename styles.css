@@ -5,27 +5,7 @@
   --contact-color: rgb(151, 0, 151);
 }
 
-@keyframes tempHide {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeInAndBounce {
-  from {
-    opacity: 0;
-    top: 48px;
-  }
-  to {
-    opacity: 1;
-    top: 0px;
-  }
-}
-
-button {
+a {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -37,32 +17,28 @@ button {
   border: none;
 }
 
-button[value="about"] {
+a[href="#about"] {
   background: var(--about-color);
-  animation-delay: 0.5s, 0s;
-  animation-duration: 1s, 0.5s;
 }
 
-button[value="skills"] {
+a[href="#skills"] {
   background: var(--skills-color);
-  animation-delay: 1s, 0s;
-  animation-duration: 1s, 1s;
 }
 
-button[value="projects"] {
+a[href="#projects"] {
   background: var(--projects-color);
-  animation-delay: 1.5s, 0s;
-  animation-duration: 1s, 1.5s;
 }
 
-button[value="contact"] {
+a[href="#contact"] {
   background: var(--contact-color);
-  animation-delay: 2s, 0s;
-  animation-duration: 1s, 2s;
 }
 
 #about {
   background: var(--about-color);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -79,28 +55,17 @@ body {
 
 nav {
   opacity: 0;
-  position: sticky;
-  top: -1px;
+  position: fixed;
+  top: -10vh;
   display: flex;
   height: 10vh;
+  width: 100%;
   color: white;
-  padding-top: 1px;
   z-index: 1;
-}
-
-.isStuck {
-  transition-delay: 1s;
-  transition-duration: 1s;
-  opacity: 1;
 }
 
 hr {
   width: 80vw;
-}
-
-.onScreen {
-  left: 0px;
-  transition-duration: 2s;
 }
 
 #projects {
@@ -122,24 +87,15 @@ section {
   flex-direction: column;
   color: white;
   text-align: center;
-  min-height: 80vh;
+  min-height: 100vh;
   justify-content: space-between;
 }
 
-#splash button {
+#splash a {
   position: relative;
-  animation-name: fadeInAndBounce, tempHide;
   width: 30vw;
   height: 30vw;
-  transition-duration: 1s;
   border-radius: 5%;
-}
-
-#splash button:hover {
-  transition-duration: 1s;
-  width: 35vw;
-  height: 35vw;
-  cursor: pointer;
 }
 
 #splash div {

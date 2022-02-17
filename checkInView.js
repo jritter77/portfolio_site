@@ -1,12 +1,14 @@
 const sections = document.getElementsByTagName("section");
 
 for (let s of sections) {
-  console.log(s.getBoundingClientRect());
   s.addEventListener("scroll", () => console.log(s));
 }
 
-document.addEventListener("scroll", () => {
+document.addEventListener("scroll", (e) => {
+  e.preventDefault();
   const viewHeight = document.documentElement.clientHeight;
+
+  console.log(document.documentElement.scrollHeight);
 
   for (let s of sections) {
     const rect = s.getBoundingClientRect();

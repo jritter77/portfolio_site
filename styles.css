@@ -25,7 +25,7 @@
   }
 }
 
-a {
+button {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -34,27 +34,28 @@ a {
   font-weight: bold;
   text-decoration: none;
   font-size: large;
+  border: none;
 }
 
-a[href="#about"] {
+button[value="about"] {
   background: var(--about-color);
   animation-delay: 0.5s, 0s;
   animation-duration: 1s, 0.5s;
 }
 
-a[href="#skills"] {
+button[value="skills"] {
   background: var(--skills-color);
   animation-delay: 1s, 0s;
   animation-duration: 1s, 1s;
 }
 
-a[href="#projects"] {
+button[value="projects"] {
   background: var(--projects-color);
   animation-delay: 1.5s, 0s;
   animation-duration: 1s, 1.5s;
 }
 
-a[href="#contact"] {
+button[value="contact"] {
   background: var(--contact-color);
   animation-delay: 2s, 0s;
   animation-duration: 1s, 2s;
@@ -88,7 +89,8 @@ nav {
 }
 
 .isStuck {
-  transition: 1s;
+  transition-delay: 1s;
+  transition-duration: 1s;
   opacity: 1;
 }
 
@@ -107,7 +109,6 @@ hr {
 
 section {
   position: relative;
-  left: 100vw;
   height: 100vh;
   color: white;
 }
@@ -125,7 +126,7 @@ section {
   justify-content: space-between;
 }
 
-#splash a {
+#splash button {
   position: relative;
   animation-name: fadeInAndBounce, tempHide;
   width: 30vw;
@@ -134,10 +135,11 @@ section {
   border-radius: 5%;
 }
 
-#splash a:hover {
+#splash button:hover {
   transition-duration: 1s;
   width: 35vw;
   height: 35vw;
+  cursor: pointer;
 }
 
 #splash div {

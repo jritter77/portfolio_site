@@ -65,7 +65,7 @@ nav {
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: 3em;
 }
 
 hr {
@@ -92,7 +92,7 @@ section {
   color: white;
   text-align: center;
   min-height: 100vh;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #splash a {
@@ -102,15 +102,22 @@ section {
   border-radius: 5%;
 }
 
-#splash div {
+#header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#link_grid {
   flex: 1;
   display: grid;
   grid-template-columns: 35vw 35vw;
   grid-template-rows: 35vw 35vw;
   justify-content: center;
   justify-items: center;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
   gap: 8px;
 }
 

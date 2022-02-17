@@ -64,6 +64,10 @@ nav {
   z-index: 1;
 }
 
+h1 {
+  font-size: xx-large;
+}
+
 hr {
   width: 80vw;
 }
@@ -108,4 +112,8 @@ section {
   align-content: center;
   align-items: center;
   gap: 8px;
+}
+
+#splash p {
+  font-size: large;
 }

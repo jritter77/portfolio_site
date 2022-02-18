@@ -22,22 +22,6 @@
   transition-duration: 1s;
 }
 
-#about.active {
-  left: 0;
-}
-
-#contact.active {
-  left: 0;
-}
-
-#projects.active {
-  top: 0vh;
-}
-
-#skills.active {
-  top: 0vh;
-}
-
 button[value="about"] {
   animation-delay: 0.5s, 0s;
   animation-duration: 1s, 0.5s;
@@ -69,7 +53,7 @@ button[value="contact"] {
   transition-duration: 2s;
 }
 
-#about.active {
+section.active {
   left: 0;
 }
 

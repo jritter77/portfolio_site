@@ -37,7 +37,6 @@ button[value="contact"] {
   background: var(--about-color);
   position: absolute;
   width: 100vw;
-  left: -100vw;
 }
 
 body {
@@ -52,7 +51,6 @@ body {
   background: var(--contact-color);
   position: absolute;
   width: 100vw;
-  left: 100vw;
 }
 
 nav {
@@ -87,7 +85,6 @@ hr {
 
 #projects {
   background: var(--projects-color);
-  top: 100vh;
   position: absolute;
   width: 100vw;
 }
@@ -96,11 +93,11 @@ section {
   position: relative;
   height: 100vh;
   color: white;
+  left: -100vh;
 }
 
 #skills {
   background: var(--skills-color);
-  top: -100vh;
   position: absolute;
   width: 100vw;
 }

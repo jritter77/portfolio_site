@@ -5,7 +5,7 @@
   --contact-color: rgb(151, 0, 151);
 }
 
-button {
+a {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -17,19 +17,19 @@ button {
   border: none;
 }
 
-button[value="about"] {
+a[href="#about"] {
   background: var(--about-color);
 }
 
-button[value="skills"] {
+a[href="#skills"] {
   background: var(--skills-color);
 }
 
-button[value="projects"] {
+a[href="#projects"] {
   background: var(--projects-color);
 }
 
-button[value="contact"] {
+a[href="#contact"] {
   background: var(--contact-color);
 }
 
@@ -94,6 +94,7 @@ section {
   height: 100vh;
   color: white;
   left: -100vh;
+  transition-duration: 1s;
 }
 
 #skills {
@@ -111,7 +112,7 @@ section {
   justify-content: space-between;
 }
 
-#splash button {
+#splash a {
   position: relative;
   animation-name: fadeInAndBounce, tempHide;
   width: 30vw;

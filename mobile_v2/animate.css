@@ -22,22 +22,22 @@
   transition-duration: 1s;
 }
 
-button[value="about"] {
+a[href="#about"] {
   animation-delay: 0.5s, 0s;
   animation-duration: 1s, 0.5s;
 }
 
-button[value="skills"] {
+a[href="#skills"] {
   animation-delay: 1s, 0s;
   animation-duration: 1s, 1s;
 }
 
-button[value="projects"] {
+a[href="#projects"] {
   animation-delay: 1.5s, 0s;
   animation-duration: 1s, 1.5s;
 }
 
-button[value="contact"] {
+a[href="#contact"] {
   animation-delay: 2s, 0s;
   animation-duration: 1s, 2s;
 }
@@ -57,12 +57,12 @@ section.active {
   left: 0;
 }
 
-#splash button {
+#splash a {
   animation-name: fadeInAndBounce, tempHide;
   transition-duration: 1s;
 }
 
-#splash button:hover {
+#splash a:hover {
   transition-duration: 1s;
   width: 35vw;
   height: 35vw;

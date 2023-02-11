@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
+
+footer {
+    background-color: grey;
+    width: 100%;
+}
+
+header {
+    background-color: grey;
+    width: 100%;
+
+}
+
+section {
+    background-color: grey;
+    width: 100%;
+    max-width: 1200px;
+
+}

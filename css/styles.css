@@ -1,3 +1,13 @@
+#about {
+    background: linear-gradient(270deg, rgb(156, 194, 131) 70%, rgba(255, 255, 255, 0));
+    justify-content: flex-end;
+}
+
+#about img {
+    left: 0;
+}
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,22 +16,118 @@ body {
     min-height: 100vh;
     padding: 0%;
     margin: 0%;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#contact_info {
+    float: right;
+    margin: 5%;
+}
+
+#education {
+    background: linear-gradient(90deg, rgb(141, 94, 121) 70%, rgba(255, 255, 255, 0));
+    justify-content: flex-start;
+}
+
+#education img {
+    right: 0;
+}
+
+#experience {
+    background: linear-gradient(270deg, rgb(94, 139, 141) 70%, rgba(255, 255, 255, 0));
+    justify-content: flex-end;
+}
+
+#experience .info > div {
+    display: flex;
+}
+
+#experience .info > div > div {
+    flex: 1;
+}
+
+#experience img {
+    left: 0;
+}
+
+.experience {
+    margin-bottom: 5%;
+}
+
+.experience p {
+    margin: 0;
+}
+
+.experience > p:nth-child(1) {
+    font-style: italic;
+}
+
+.experience > p:nth-child(2) {
+    font-weight: bold;
+}
+
+
 footer {
-    background-color: grey;
+    background: linear-gradient(black, grey);
     width: 100%;
+    text-align: center;
+    margin-top: 2%;
 }
 
 header {
-    background-color: grey;
+    background: linear-gradient(grey, black);
     width: 100%;
+    text-align: center;
+}
 
+i {
+    font-size: xx-large;
+    color: white;
+}
+
+img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.info {
+    height: 100%;
+    width: 60%;
+    padding-left: 5%;
+}
+
+li {
+    font-weight: bold;
+}
+
+p {
+    font-weight: normal;
 }
 
 section {
-    background-color: grey;
     width: 100%;
     max-width: 1200px;
-
+    display: flex;
+    position: relative;
+    margin-top: 2%;
 }
+
+section h1 {
+    text-decoration: underline;
+}
+
+#skills {
+    background: linear-gradient(90deg, rgb(65, 65, 65) 70%, rgba(255, 255, 255, 0));
+    justify-content: flex-start;
+}
+
+#skills img {
+    right: 0;
+}
+
+
+

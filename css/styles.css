@@ -7,6 +7,11 @@
     left: 0;
 }
 
+#about .info {
+    text-align: justify;
+    padding: 5%;
+}
+
 
 body {
     display: flex;
@@ -114,6 +119,7 @@ section {
     display: flex;
     position: relative;
     margin-top: 2%;
+    overflow: hidden;
 }
 
 section h1 {

@@ -29,7 +29,19 @@ body {
 
 #contact_info {
     float: right;
-    margin: 5%;
+    margin-left: 5%;
+    width: 30%;
+    margin-bottom: 16px;
+}
+
+#contact_info div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact_info h2 {
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 #education {
@@ -59,11 +71,11 @@ body {
 }
 
 .experience {
-    margin-bottom: 5%;
+    margin-bottom: 32px;
 }
 
 .experience p {
-    margin: 0;
+    margin: 8px 16px;
 }
 
 .experience > p:nth-child(1) {
@@ -102,8 +114,8 @@ img {
 
 .info {
     height: 100%;
-    width: 60%;
-    padding-left: 5%;
+    width: 70%;
+    padding-left: 16px;
 }
 
 li {

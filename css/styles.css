@@ -24,6 +24,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
 }
 
 #contact_info {
@@ -88,7 +89,7 @@ header {
 }
 
 i {
-    font-size: xx-large;
+    font-size: 60px;
     color: white;
 }
 

@@ -1,3 +1,5 @@
+
+
 #about {
     background: linear-gradient(270deg, rgb(156, 194, 131) 70%, rgba(255, 255, 255, 0));
     justify-content: flex-end;
@@ -99,6 +101,30 @@ header {
     width: 100%;
     text-align: center;
 }
+
+header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div a {
+    flex: 6;
+    color: white;
+}
+
+header div a:first-child {
+    text-align: right;
+}
+
+header div a:last-child {
+    text-align: left;
+}
+
+header div span {
+    flex: 1;
+}
+
 
 i {
     font-size: 60px;

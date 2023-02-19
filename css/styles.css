@@ -1,4 +1,10 @@
+a {
+    text-decoration: none;
+}
 
+a:hover {
+    color: yellow;
+}
 
 #about {
     background: linear-gradient(270deg, rgb(156, 194, 131) 70%, rgba(255, 255, 255, 0));
@@ -46,6 +52,8 @@ body {
     margin-bottom: 16px;
 }
 
+
+
 #education {
     background: linear-gradient(90deg, rgb(141, 94, 121) 70%, rgba(255, 255, 255, 0));
     justify-content: flex-start;
@@ -83,6 +91,18 @@ body {
 .experience > p:nth-child(1) {
     font-style: italic;
 }
+
+.experience p a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.experience p a:hover {
+    color: yellow;
+}
+
 
 .experience > p:nth-child(2) {
     font-weight: bold;
@@ -129,6 +149,10 @@ header div span {
 i {
     font-size: 60px;
     color: white;
+}
+
+i:hover {
+    color: yellow;
 }
 
 img {
